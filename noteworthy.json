@@ -1,0 +1,57 @@
+{
+  "updater": {
+    "channel": "insiders",
+    "download": false,
+    "interval": -1
+  },
+  "themes": {
+    "active": "noteworthy",
+    "installed": {
+      "noteworthy": {
+        "id": "noteworthy",
+        "base": "light",
+        "title": "Noteworthy",
+        "colors": {
+          "tabbar:tab:background": "#c0c0c0",
+          "tabbar:tab:backgroundHover": "#ddd",
+          "tabbar:tab:backgroundActive": "#F5F5F5",
+          "tabbar:tab:backgroundInactive": "#ccc",
+          "viewbar:background": "#272822",
+          "sidebar:background": "#343434",
+          "sidebar:foreground": "#ffffff",
+          "mainbar:background": "#ffffff",
+          "mainbar:foreground": "#465360",
+          "toolbar:background": "#f7f7f7",
+          "statusbar:background": "#007ACC",
+          "statusbar:foreground": "#ffffff",
+          "titlebar:background": "#ccd2d9",
+          "titlebar:foreground": "#465360",
+          "titlebar:button:background": "#ccd2d9",
+          "titlebar:button:backgroundHover": "hsl(212.3076923077, 14.606741573%, 79.5490196078%)",
+          "titlebar:button:backgroundActive": "hsl(212.3076923077, 14.606741573%, 75.0490196078%)",
+          "titlebar:button:close:background": "#ccd2d9",
+          "scrollbar:thumb:background": "#46536035",
+          "scrollbar:thumb:backgroundHover": "#007ACC55",
+          "scrollbar:thumb:backgroundActive": "#007ACCaa",
+          "editor:background": "#ffffff",
+          "editor:foreground": "#465360",
+          "editor:cursor:foreground": "#333333",
+          "editor:guide:background": "#e6e6e6",
+          "editor:guide:backgroundActive": "#e6e6e6",
+          "editor:gutter:background": "#ffffff",
+          "editor:gutter:foreground": "#cccccc",
+          "preview:background": "#ffffff",
+          "preview:foreground": "#465360",
+          "preview:blockquote:border": "hsl(0, 0%, 77%)",
+          "preview:blockquote:foreground": "#A7B9C4",
+          "preview:heading:border": "hsl(0, 0%, 80%)",
+          "preview:h6:foreground": "hsl(0, 0%, 80%)",
+          "preview:hr:background": "hsl(0, 0%, 77%)",
+          "preview:table:border": "hsl(0, 0%, 77%)",
+          "preview:table:row:even:background": "rgba(0, 122, 204, 0.05)",
+          "preview:link:foreground": "#007ACC"
+        }
+      }
+    }
+  }
+}

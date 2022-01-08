@@ -1,0 +1,77 @@
+/*---------------------
+ * Sidebar styles
+ *---------------------*/
+.sidebar .level-0 span.title:not(.small) {
+    /* Root Headings ("Notes", "Notebooks", "Tags", etc.") */
+
+    font-weight: 600;
+    font-size: 12px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+.sidebar .tag span.title.small {
+    /* Collapsible containers (tags, notebooks, etc.) */
+    font-weight: 500;
+    /* Blue */
+    color: #8cf;
+}
+.sidebar .note span {
+    /* Notes */
+    color: #e0e0e4; /* Slight gray */
+}
+.sidebar .list-item.active .content {
+    /* Selected sidebar item */
+    background: #666 !important;
+}
+.sidebar .list-item:not(.active) .content:hover {
+    /* Hover, Un-Selected sidebar item */
+    background: #555 !important;
+}
+.sidebar .list-item.active .content:hover {
+    /* Hover, Selected sidebar item */
+    background: #888 !important;
+}
+.layout,
+.layout-header,
+.layout-footer,
+.layout-content {
+    /* Sidebar left border */
+    border-color: #727272 !important;
+}
+
+/*---------------------
+ * Sidebar icons
+ *---------------------*/
+.sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_TRASH__"] .title::before {
+    font-family: "Material Icons";
+    vertical-align: middle;
+}
+
+.sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before {
+    content: "note\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before {
+    content: "star\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before {
+    content: "tag\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before {
+    content: "archive\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_TRASH__"] .title::before {
+    content: "delete\00a0\00a0";
+}
+
+/*---------------------
+ * Tab bar styles
+ *---------------------*/
+.tabbar .tab:not(.persistent):not(.pinned) .title {
+    /* Draw a bit more attention to non-sticky tabs */
+    color: #d00;
+    font-weight: 500;
+}
