@@ -69,8 +69,8 @@
 
 
 /*---------------------
-* Tab bar
-*---------------------*/
+ * Tab bar
+ *---------------------*/
 .tabbar .tab:not(.persistent):not(.pinned) .title {
     /* Draw a bit more attention to non-sticky tabs */
     color: #d00;
@@ -78,16 +78,19 @@
 }
 
 /*---------------------
-* Search results
-*---------------------*/
-.sidebar[data-id="search"] .note .title {
+ * Search results
+ *---------------------*/
+ .sidebar[data-id="search"] .note .title{
+    /* Note titles */
     font-weight: 700;
     color: #fff;
 }
-.sidebar[data-id="search"] .highlight .title {
+.sidebar[data-id="search"] .highlight .title{
+    /* Search result lines */
     color: #bbb;
 }
-.sidebar[data-id="search"] .highlight .title mark {
+.sidebar[data-id="search"] .highlight .title mark{
+    /* Search result highlighting */
     background-color: #ff0 !important;
     color: #000 !important;
     padding: 0px 3px !important;

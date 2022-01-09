@@ -7,6 +7,10 @@ to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ## Unreleased
 **(None)**
 
+## 1.1.1 - 2022-01-09
+### Changed
+- Cleanup CSS comments
+
 ## 1.1.0 - 2022-01-09
 ### Added
 - Style search results
