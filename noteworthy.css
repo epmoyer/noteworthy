@@ -67,11 +67,29 @@
     content: "delete\00a0\00a0";
 }
 
+
 /*---------------------
- * Tab bar styles
- *---------------------*/
+* Tab bar
+*---------------------*/
 .tabbar .tab:not(.persistent):not(.pinned) .title {
     /* Draw a bit more attention to non-sticky tabs */
     color: #d00;
     font-weight: 500;
+}
+
+/*---------------------
+* Search results
+*---------------------*/
+.sidebar[data-id="search"] .note .title {
+    font-weight: 700;
+    color: #fff;
+}
+.sidebar[data-id="search"] .highlight .title {
+    color: #bbb;
+}
+.sidebar[data-id="search"] .highlight .title mark {
+    background-color: #ff0 !important;
+    color: #000 !important;
+    padding: 0px 3px !important;
+    border-radius: 3px !important;
 }
