@@ -14,7 +14,7 @@ to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## 1.2.0 - 2022-01-26
 ### Added
-- Support the new "panel" element which arrived in `1.0.0-beta.5`.
+- Support the new "panel" element which arrived in `1.9.0-beta.5`.
 ### Changed
 - De-saturate the search highlight yellow a bit
 
