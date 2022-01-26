@@ -1,13 +1,11 @@
 # Noteworthy
 This is a theme (and accompanying custom CSS) for the most-excellent markdown note taking app [Notable](https://notable.app).
 
-As of this writing, the theme is tailored to work with Notable `1.0.0-beta.3`.  Likely it will evolve as the beta evolves.
+As of this writing, the theme is tailored to work with Notable `1.0.0-beta.5`.  Likely it will evolve as the beta evolves.
 
 ## Screenshots
-### Main Application
-![](media/noteworthy_screenshot.png)
-### Search results
-![](media/sidebar.png)
+![](media/noteworthy_sidebar.png)
+![](media/noteworthy_panel.png)
 
 ## Installation
 For reference, the `noteworthy.json` file contains all the boilerplate of a bare-bones Notable global settings JSON file, but in reality all you want is the `"noteworthy"` object (located inside the `"themes":"installed"` object).

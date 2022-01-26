@@ -5,8 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+*(None)*
+
+## 1.2.0 - 2022-01-26
+### Added
+- Support the new "panel" element which arrived in `1.0.0-beta.5`.
 ### Changed
-- Desaturate the search highligh yellow a bit
+- De-saturate the search highlight yellow a bit
 
 ## 1.1.1 - 2022-01-09
 ### Changed
