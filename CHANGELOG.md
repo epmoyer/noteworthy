@@ -7,6 +7,11 @@ to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ## Unreleased
 *(None)*
 
+## 1.3.0 - 2022-01-26
+### Changed
+- Colorize headings in the "Information" and "Data Directory" Panels/Sidebars (to help telegraph which mode the Panel/Sidebar is in).
+- Style the "Information" Panel/Sidebar headings.
+
 ## 1.2.0 - 2022-01-26
 ### Added
 - Support the new "panel" element which arrived in `1.0.0-beta.5`.

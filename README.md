@@ -6,6 +6,8 @@ As of this writing, the theme is tailored to work with Notable `1.0.0-beta.5`.  
 ## Screenshots
 ![](media/noteworthy_sidebar.png)
 ![](media/noteworthy_panel.png)
+![](media/noteworthy_panel_information.png)
+![](media/noteworthy_panel_data_directory.png)
 
 ## Installation
 For reference, the `noteworthy.json` file contains all the boilerplate of a bare-bones Notable global settings JSON file, but in reality all you want is the `"noteworthy"` object (located inside the `"themes":"installed"` object).

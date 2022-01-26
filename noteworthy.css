@@ -89,7 +89,7 @@
  }
  
  /*--------------------------
-  * Search results (Sidebar/Panel)
+  * "Search" (Sidebar/Panel)
   *-------------------------*/
  .sidebar[data-id="search"] .note .title,
  .panel[data-id="search"] .note .title{
@@ -109,4 +109,23 @@
    color: #000 !important;
    padding: 0px 3px !important;
    border-radius: 3px !important;
+ }
+ 
+ /*--------------------------
+  * "Information" Sidebar/Panel
+  *-------------------------*/
+ .sidebar[data-id='information'] h5,
+ .panel[data-id='information'] h5 {
+   font-weight: 600;
+   font-size: 12px;
+   color: #ffaf1d; /* Orange */
+   text-transform: uppercase;
+ }
+ 
+ /*--------------------------
+  * "Data Directory" Sidebar/Panel
+  *-------------------------*/
+ .sidebar[data-id='cwd'] .list-group .title,
+ .panel[data-id='cwd'] .list-group .title{
+   color: #82ef82 !important; /* Green */
  }
