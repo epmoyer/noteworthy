@@ -19,6 +19,8 @@
           "viewbar:background": "#272822",
           "sidebar:background": "#343434",
           "sidebar:foreground": "#ffffff",
+          "panel:background": "#343434",
+          "panel:foreground": "#ffffff",
           "mainbar:background": "#ffffff",
           "mainbar:foreground": "#465360",
           "toolbar:background": "#f7f7f7",
