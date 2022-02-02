@@ -5,7 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
-*(None)*
+### Changed
+- Use un-bolded green for note titles (to play better with "classic" mode, where you are staring at the search panel constantly. Bold was jarring.)
+- Make data-directory headings purple (since green is now for note titles).
+- Adopt `var()` for better readability and maintainability.
 
 ## 1.3.0 - 2022-01-26
 ### Changed
