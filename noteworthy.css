@@ -1,6 +1,8 @@
 body {
+    --container-title: #8cf; /* Blue (tags, notebooks, etc.) */
     --note-title: #4cdd8d; /* Green */
     --data-directory-heading: #e080ff; /* Purple */
+    --information-heading: #ffaf1d; /* Orange */
 }
 /*---------------------
  * Sidebar / Panel
@@ -19,7 +21,7 @@ body {
     /* Collapsable containers (tags, notebooks, etc.) */
     font-weight: 500;
     /* Blue */
-    color: #8cf;
+    color: var(--container-title);
 }
 .sidebar .note span,
 .panel .note span {
@@ -121,7 +123,7 @@ body {
 .panel[data-id="information"] h5 {
     font-weight: 600;
     font-size: 12px;
-    color: #ffaf1d; /* Orange */
+    color: var(--information-heading);
     text-transform: uppercase;
 }
 
