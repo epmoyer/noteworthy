@@ -3,7 +3,23 @@ body {
     --note-title: #4cdd8d; /* Green */
     --data-directory-heading: #e080ff; /* Purple */
     --information-heading: #ffaf1d; /* Orange */
+    --editor-headings: #c9e9ff; /* Light Blue */
 }
+
+/*---------------------
+ * Editor
+ *---------------------*/
+
+ /* Headings */
+.decoration-heading:before {
+    content: '';
+    position: absolute;
+    background: var(--editor-headings);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /*---------------------
  * Sidebar / Panel
  *---------------------*/
@@ -49,8 +65,8 @@ body {
 }
 
 /*---------------------
-  * Sidebar/Panel icons
-  *---------------------*/
+ * Sidebar/Panel icons
+ *---------------------*/
 .sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
 .sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
 .sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
@@ -87,16 +103,16 @@ body {
 }
 
 /*---------------------
-  * Tabs
-  *---------------------*/
+ * Tabs
+ *---------------------*/
 .tabbar .tab:not(.persistent):not(.pinned) .title {
     color: #d00;
     font-weight: 500;
 }
 
 /*--------------------------
-  * "Search" (Sidebar/Panel)
-  *-------------------------*/
+ * "Search" (Sidebar/Panel)
+ *-------------------------*/
 .sidebar[data-id="search"] .note .title,
 .panel[data-id="search"] .note .title {
     /* Note titles */
@@ -117,8 +133,8 @@ body {
 }
 
 /*--------------------------
-* "Information" Sidebar/Panel
-*-------------------------*/
+ * "Information" Sidebar/Panel
+ *-------------------------*/
 .sidebar[data-id="information"] h5,
 .panel[data-id="information"] h5 {
     font-weight: 600;
@@ -128,8 +144,8 @@ body {
 }
 
 /*--------------------------
-  * "Data Directory" Sidebar/Panel
-  *-------------------------*/
+ * "Data Directory" Sidebar/Panel
+ *-------------------------*/
 .sidebar[data-id="cwd"] .list-group .title,
 .panel[data-id="cwd"] .list-group .title {
     color: var(--data-directory-heading) !important;

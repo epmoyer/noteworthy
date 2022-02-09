@@ -9,6 +9,7 @@ to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - Use un-bolded green for note titles (to play better with "classic" mode, where you are staring at the search panel constantly. Bold was jarring.)
 - Make data-directory headings purple (since green is now for note titles).
 - Adopt `var()` for better readability and maintainability.
+- Color background of editor headings (light blue).
 
 ## 1.3.0 - 2022-01-26
 ### Changed
