@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+## 1.4.0 - 2022-02-16
+### Added
+- Prevent the sidebar and panel from changing size when the main window is resized.
 ### Changed
 - Use un-bolded green for note titles (to play better with "classic" mode, where you are staring at the search panel constantly. Bold was jarring.)
 - Make data-directory headings purple (since green is now for note titles).

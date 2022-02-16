@@ -6,6 +6,25 @@ body {
     --editor-headings: #c9e9ff; /* Light Blue */
 }
 
+/* Prevent the sidebar and panel from changing size when the main window is resized.
+ * - Both can still be manually sized.
+ * - Both will return to the "default" size specified below at app startup.
+ */
+.layout.column.panel {
+    flex: 0 0;
+
+    /* This will set the initial size at app startup */
+    width: 280px;
+    flex-basis: 280px;
+}
+.layout.column.sidebar {
+    flex: 0 0;
+
+    /* This will set the initial size at app startup */
+    width: 204px;
+    flex-basis: 204px;
+}
+
 /*---------------------
  * Editor
  *---------------------*/
