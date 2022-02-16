@@ -1,131 +1,171 @@
+body {
+    --container-title: #8cf; /* Blue (tags, notebooks, etc.) */
+    --note-title: #4cdd8d; /* Green */
+    --data-directory-heading: #e080ff; /* Purple */
+    --information-heading: #ffaf1d; /* Orange */
+    --editor-headings: #c9e9ff; /* Light Blue */
+}
+
+/* Prevent the sidebar and panel from changing size when the main window is resized.
+ * - Both can still be manually sized.
+ * - Both will return to the "default" size specified below at app startup.
+ */
+.layout.column.panel {
+    flex: 0 0;
+
+    /* This will set the initial size at app startup */
+    width: 280px;
+    flex-basis: 280px;
+}
+.layout.column.sidebar {
+    flex: 0 0;
+
+    /* This will set the initial size at app startup */
+    width: 204px;
+    flex-basis: 204px;
+}
+
+/*---------------------
+ * Editor
+ *---------------------*/
+
+ /* Headings */
+.decoration-heading:before {
+    content: '';
+    position: absolute;
+    background: var(--editor-headings);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /*---------------------
  * Sidebar / Panel
  *---------------------*/
- .sidebar .level-0 span.title:not(.small),
- .panel .level-0 span.title:not(.small){
-   /* Root Headings ("Notes", "Notebooks", "Tags", etc.") */
- 
-   font-weight: 600;
-   font-size: 12px;
-   color: #ccc;
-   text-transform: uppercase;
- }
- .sidebar .tag span.title.small,
- .panel .tag span.title.small{
-   /* Collapsable containers (tags, notebooks, etc.) */
-   font-weight: 500;
-   /* Blue */
-   color: #8cf;  
- }
- .sidebar .note span,
- .panel .note span{
-   /* Notes */
-   color: #e0e0e4;  /* Slight gray */
- }
- .sidebar .list-item.active .content,
- .panel .list-item.active .content{
-   /* Selected sidebar item */
-   background: #666 !important;
- }
- .sidebar .list-item:not(.active) .content:hover,
- .panel .list-item:not(.active) .content:hover{
-   /* Hover, Un-Selected sidebar item */
-   background: #555 !important;
- }
- .sidebar .list-item.active .content:hover,
- .panel .list-item.active .content:hover{
-   /* Hover, Selected sidebar item */
-   background: #888 !important;
- }
- .layout.column {
-   /* Sidebar/Panel left border */
-   border-color: #727272 !important;
- }
- 
- /*---------------------
-  * Sidebar/Panel icons
-  *---------------------*/
- .sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
- .sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
- .sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
- .sidebar .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
- .sidebar .list-tags [data-id="__NOTABLE_TRASH__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_TRASH__"] .title::before {
-   font-family: "Material Icons";
-   vertical-align: middle;
- }
- 
- .sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before {
-   content: "note\00a0\00a0";
- }
- .sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before  {
-   content: "star\00a0\00a0";
- }
- .sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before {
-   content: "tag\00a0\00a0";
- }
- .sidebar .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before {
-   content: "archive\00a0\00a0";
- }
- .sidebar .list-tags [data-id="__NOTABLE_TRASH__"] .title::before,
- .panel .list-tags [data-id="__NOTABLE_TRASH__"] .title::before {
-   content: "delete\00a0\00a0";
- }
- 
- /*---------------------
-  * Tabs
-  *---------------------*/
- .tabbar .tab:not(.persistent):not(.pinned) .title{
-   color: #d00;
-   font-weight: 500;
- }
- 
- /*--------------------------
-  * "Search" (Sidebar/Panel)
-  *-------------------------*/
- .sidebar[data-id="search"] .note .title,
- .panel[data-id="search"] .note .title{
-   /* Note titles */
-   font-weight: 700;
-   color: #fff;
- }
- .sidebar[data-id="search"] .highlight .title,
- .panel[data-id="search"] .highlight .title{
-   /* Search result lines */
-   color: #bbb;
- }
- .sidebar[data-id="search"] .highlight .title mark,
- .panel[data-id="search"] .highlight .title mark{
-   /* Search result highlighting */
-   background-color: #ff5 !important;
-   color: #000 !important;
-   padding: 0px 3px !important;
-   border-radius: 3px !important;
- }
- 
- /*--------------------------
-  * "Information" Sidebar/Panel
-  *-------------------------*/
- .sidebar[data-id='information'] h5,
- .panel[data-id='information'] h5 {
-   font-weight: 600;
-   font-size: 12px;
-   color: #ffaf1d; /* Orange */
-   text-transform: uppercase;
- }
- 
- /*--------------------------
-  * "Data Directory" Sidebar/Panel
-  *-------------------------*/
- .sidebar[data-id='cwd'] .list-group .title,
- .panel[data-id='cwd'] .list-group .title{
-   color: #82ef82 !important; /* Green */
- }
+.sidebar .level-0 span.title:not(.small),
+.panel .level-0 span.title:not(.small) {
+    /* Root Headings ("Notes", "Notebooks", "Tags", etc.") */
+
+    font-weight: 600;
+    font-size: 12px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+.sidebar .tag span.title.small,
+.panel .tag span.title.small {
+    /* Collapsable containers (tags, notebooks, etc.) */
+    font-weight: 500;
+    /* Blue */
+    color: var(--container-title);
+}
+.sidebar .note span,
+.panel .note span {
+    /* Note titles */
+    color: var(--note-title);
+}
+.sidebar .list-item.active .content,
+.panel .list-item.active .content {
+    /* Selected sidebar item */
+    background: #666 !important;
+}
+.sidebar .list-item:not(.active) .content:hover,
+.panel .list-item:not(.active) .content:hover {
+    /* Hover, Un-Selected sidebar item */
+    background: #555 !important;
+}
+.sidebar .list-item.active .content:hover,
+.panel .list-item.active .content:hover {
+    /* Hover, Selected sidebar item */
+    background: #888 !important;
+}
+.layout.column {
+    /* Sidebar/Panel left border */
+    border-color: #727272 !important;
+}
+
+/*---------------------
+ * Sidebar/Panel icons
+ *---------------------*/
+.sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
+.sidebar .list-tags [data-id="__NOTABLE_TRASH__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_TRASH__"] .title::before {
+    font-family: "Material Icons";
+    vertical-align: middle;
+}
+
+.sidebar .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_NOTES_ALL__"] .title::before {
+    content: "note\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_FAVORITES__"] .title::before {
+    content: "star\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_UNTAGGED__"] .title::before {
+    content: "tag\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_ARCHIVE__"] .title::before {
+    content: "archive\00a0\00a0";
+}
+.sidebar .list-tags [data-id="__NOTABLE_TRASH__"] .title::before,
+.panel .list-tags [data-id="__NOTABLE_TRASH__"] .title::before {
+    content: "delete\00a0\00a0";
+}
+
+/*---------------------
+ * Tabs
+ *---------------------*/
+.tabbar .tab:not(.persistent):not(.pinned) .title {
+    color: #d00;
+    font-weight: 500;
+}
+
+/*--------------------------
+ * "Search" (Sidebar/Panel)
+ *-------------------------*/
+.sidebar[data-id="search"] .note .title,
+.panel[data-id="search"] .note .title {
+    /* Note titles */
+    color: var(--note-title);
+}
+.sidebar[data-id="search"] .highlight .title,
+.panel[data-id="search"] .highlight .title {
+    /* Search result lines */
+    color: #bbb;
+}
+.sidebar[data-id="search"] .highlight .title mark,
+.panel[data-id="search"] .highlight .title mark {
+    /* Search result highlighting */
+    background-color: #ff5 !important;
+    color: #000 !important;
+    padding: 0px 3px !important;
+    border-radius: 3px !important;
+}
+
+/*--------------------------
+ * "Information" Sidebar/Panel
+ *-------------------------*/
+.sidebar[data-id="information"] h5,
+.panel[data-id="information"] h5 {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--information-heading);
+    text-transform: uppercase;
+}
+
+/*--------------------------
+ * "Data Directory" Sidebar/Panel
+ *-------------------------*/
+.sidebar[data-id="cwd"] .list-group .title,
+.panel[data-id="cwd"] .list-group .title {
+    color: var(--data-directory-heading) !important;
+}
