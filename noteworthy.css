@@ -4,6 +4,8 @@ body {
     --data-directory-heading: #e080ff; /* Purple */
     --information-heading: #ffaf1d; /* Orange */
     --editor-headings: #c9e9ff; /* Light Blue */
+    --color-table-header-bg: steelblue; /* test */
+    --color-table-header: white;
 }
 
 /* Prevent the sidebar and panel from changing size when the main window is resized.
@@ -28,11 +30,10 @@ body {
 /*---------------------
  * Tables
  *---------------------*/
- .preview table th {
+.preview table th {
     background-color: var(--color-table-header-bg) !important;
     color: var(--color-table-header) !important;
 }
-
 /*---------------------
  * Strong
  *---------------------*/
