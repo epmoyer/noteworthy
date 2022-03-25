@@ -6,6 +6,11 @@ to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## 1.5.0 - 2022-03-25
+### Added
+- Re-style preview table headers
+- Increase darkness and weight of preview `strong` (i.e. bold).
+
 ## 1.4.0 - 2022-02-16
 ### Added
 - Prevent the sidebar and panel from changing size when the main window is resized.
