@@ -26,6 +26,22 @@ body {
 }
 
 /*---------------------
+ * Tables
+ *---------------------*/
+ .preview table th {
+    background-color: var(--color-table-header-bg) !important;
+    color: var(--color-table-header) !important;
+}
+
+/*---------------------
+ * Strong
+ *---------------------*/
+.preview strong {
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+/*---------------------
  * Editor
  *---------------------*/
 
