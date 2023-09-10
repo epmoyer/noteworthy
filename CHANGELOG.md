@@ -6,6 +6,10 @@ to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## 1.6.0 - 2023-09-10
+### Added
+- Style bullets to be filled circles (`disc`) at all indent levels.
+
 ## 1.5.0 - 2022-03-25
 ### Added
 - Re-style preview table headers
